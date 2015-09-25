@@ -1,0 +1,26 @@
+# This is a modified form of example.gitignore, because my repo is in sites/default, within a clone of Drupal8 itself
+
+# In summary:
+# https://www.drupal.org/project/drupal/git-instructions
+# https://www.drupal.org/node/803746
+# clone Drupal8 into /workspace/drupal8
+# make it 'safe' from any accidental edits:
+# git remote rename origin drupal
+# git remote add origin /workspace/drupal8-core
+# Then install Drupal 8, which seems to affect the checkout quite a bit. Then:
+# cd /workspace/drupal8/sites/default
+# git init /workspace/drupal8/sites/default
+# git checkout -b master
+# And away...
+
+# Ignore custom configuration files
+settings.*.php
+services.*.yml
+
+# Ignore paths that contain user-generated content.
+files
+private
+
+# Ignore SimpleTest multi-site environment.
+simpletest
+
