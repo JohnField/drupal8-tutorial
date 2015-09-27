@@ -5,9 +5,11 @@
  */
 
 namespace Drupal\hello_world\Controller;
-
 use Drupal\Core\Controller\ControllerBase;
 
+  /**
+   * "Hello, World!" Controller.
+   */
 class HelloController extends ControllerBase {
 
   /**
